@@ -129,7 +129,7 @@
     menu.remove();
   };
 
-  button.innerHTML = 'poopy 2!';
+  button.innerHTML = 'search the web';
   button.style.cssText = `
     font-family: Arial;
     font-size: 16px;
@@ -142,7 +142,7 @@
     cursor: pointer;
   `;
   button.onclick = function() {
-    var query = prompt("search the web");
+    var query = prompt("what do want search");
     var proxy2 = 'https://api.codetabs.com/v1/proxy/?quest=google.com/search?q=';
     fetch(proxy2 + query)
       .then((response) => response.text())
@@ -222,7 +222,7 @@
     menu.remove();
   };
 
-  button.innerHTML = 'poopy';
+  button.innerHTML = 'URL input';
   button.style.cssText = `
     font-family: Arial;
     font-size: 16px;
