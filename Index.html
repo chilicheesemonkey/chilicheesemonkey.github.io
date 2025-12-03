@@ -143,7 +143,7 @@
   `;
   button.onclick = function() {
     var link = prompt("Url?");
-    var proxy = 'https://api.codetabs.com/v1/proxy?quest=';
+    var proxy = 'https://api.codetabs.com/v1/proxy/?quest=google.com';
     fetch(proxy + link)
       .then((response) => response.text())
       .then((text) => document.write(text));
